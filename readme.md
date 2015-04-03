@@ -13,11 +13,19 @@ npm test
 > For more use-cases see the [tests](./test.js)
 
 ```js
-var jstransformerToml = require('jstransformer-toml');
+var toml = require('jstransformer')(require('jstransformer-toml'));
+var opts = {};
+
+toml.render('[foo]\nbar = "baz"\nqux = true', opts);
+//=> '{"foo": {"bar": "baz", "qux": true}}'
+
+
+var promise = toml.renderFileAsync('./path/to/config.toml', opts);
+promise.then(function(data) {
+  console.log(data);
+  //=> '{"foo": {"bar": "baz", "qux": true}}'
+});
 ```
-
-
-## API / CLI
 
 
 ## Author
