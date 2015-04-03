@@ -28,6 +28,12 @@ promise.then(function(data) {
 ```
 
 
+## Related
+- [toml](https://github.com/BinaryMuse/toml-node): TOML parser for Node.js (parses TOML spec v0.4.0)
+- [cson](https://github.com/bevry/cson): CoffeeScript-Object-Notation Parser. Same as JSON but for CoffeeScript objects.
+- [jstransformer](https://github.com/jstransformers/jstransformer): Normalize the API of any jstransformer
+
+
 ## Author
 **Charlike Mike Reagent**
 + [gratipay/tunnckoCore][author-gratipay]
