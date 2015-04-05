@@ -7,7 +7,6 @@
 
 'use strict';
 
-var pkg = require('fs');
 var test = require('assertit');
 var transform = require('../index');
 
