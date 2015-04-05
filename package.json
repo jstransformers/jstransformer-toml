@@ -34,11 +34,11 @@
     "url": "https://github.com/jstransformers/jstransformer-toml/blob/master/license.md"
   },
   "dependencies": {
-    "bluebird": "~2.9.24",
     "toml": "~2.2.1"
   },
   "devDependencies": {
     "assertit": "^0.1.0",
-    "istanbul-harmony": "~0.3.1"
+    "istanbul-harmony": "~0.3.1",
+    "jstransformer": "0.0.1"
   }
 }

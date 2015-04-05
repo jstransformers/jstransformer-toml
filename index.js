@@ -10,22 +10,10 @@
 var fs = require('fs');
 var path = require('path');
 var toml = require('toml');
-var bluebird = require('bluebird');
-var readFile = bluebird.promisify(fs.readFile);
-var readFileSync = fs.readFileSync;
 
 exports.name = 'toml';
 exports.outputFormat = 'json';
 
 exports.render = function _render(str, opts) {
-  return toml.parse(str, opts);
-};
-exports.renderFile = function _renderFile(filepath, opts) {
-  var input = readFileSync(filepath, 'utf8');
-  return toml.parse(input, opts);
-};
-exports.renderFileAsync = function _renderFileAsync(filepath, opts) {
-  return readFile(filepath, 'utf8').then(function(data) {
-    return toml.parse(data, opts);
-  });
+  return JSON.stringify(toml.parse(str, opts));
 };
