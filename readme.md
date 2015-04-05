@@ -34,6 +34,8 @@ promise.then(function(data) {
 - [jstransformer](https://github.com/jstransformers/jstransformer): Normalize the API of any jstransformer
 - [jstransformer-xml2js](https://github.com/tunnckoCore/jstransformer-xml2js): XML support for JS Transformers, transform XML to JSON. Using `xml2js`
 - [jstransformer-myth](https://github.com/jstransformers/jstransformer-myth): Myth support for JS Transformers
+- [assertit](https://github.com/tunnckoCore/assertit): Thin sugar layer on top of `testit` framework, `is-kindof` and `assert`.
+
 
 ## License [![MIT license][license-img]][license-url]
 Copyright (c) 2015 [JSTransformers][jstransformers-url], [Charlike Mike Reagent][contrib-more], [contributors][contrib-graf].  
