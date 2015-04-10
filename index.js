@@ -12,6 +12,7 @@ var path = require('path');
 var toml = require('toml');
 
 exports.name = 'toml';
+exports.inputFormats = ['toml', 'ini'];
 exports.outputFormat = 'json';
 
 exports.render = function _render(str, opts) {
