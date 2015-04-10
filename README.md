@@ -16,13 +16,15 @@ npm test
 var toml = require('jstransformer')(require('jstransformer-toml'));
 var opts = {};
 
-toml.render('[foo]\nbar = "baz"\nqux = true', opts);
+var result = toml.render('[foo]\nbar = "baz"\nqux = true', opts);
+
+console.log(JSON.parse(result).body)
 //=> '{"foo": {"bar": "baz", "qux": true}}'
 
 
 var promise = toml.renderFileAsync('./path/to/config.toml', opts);
 promise.then(function(data) {
-  console.log(data);
+  console.log(JSON.parse(result).body);
   //=> '{"foo": {"bar": "baz", "qux": true}}'
 });
 ```
