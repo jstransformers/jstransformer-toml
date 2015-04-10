@@ -31,7 +31,7 @@
   ],
   "license": {
     "type": "MIT",
-    "url": "https://github.com/jstransformers/jstransformer-toml/blob/master/license.md"
+    "url": "https://github.com/jstransformers/jstransformer-toml/blob/master/LICENSE.md"
   },
   "dependencies": {
     "toml": "~2.2.1"
