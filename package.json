@@ -34,7 +34,7 @@
     "url": "https://github.com/jstransformers/jstransformer-toml/blob/master/LICENSE.md"
   },
   "dependencies": {
-    "toml": "~2.2.1"
+    "toml": "~2.3.0"
   },
   "devDependencies": {
     "assertit": "^0.1.0",
