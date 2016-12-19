@@ -1,4 +1,8 @@
+# Changelog
 
+## v0.0.1: 2016-12-19
+
+- Updated Boilerplate
 
 ## v0.5.0 / April 10, 2015
 - update example

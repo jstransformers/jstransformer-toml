@@ -1,20 +1,10 @@
-/**
- * jstransformer-toml <https://github.com/jstransformers/jstransformer-toml>
- *
- * Copyright (c) 2015 Charlike Mike Reagent, contributors.
- * Released under the MIT license.
- */
+'use strict'
 
-'use strict';
+var toml = require('toml')
 
-var fs = require('fs');
-var path = require('path');
-var toml = require('toml');
+exports.name = 'toml'
+exports.outputFormat = 'json'
 
-exports.name = 'toml';
-exports.inputFormats = ['toml', 'ini'];
-exports.outputFormat = 'json';
-
-exports.render = function _render(str, opts) {
-  return JSON.stringify(toml.parse(str, opts));
-};
+exports.render = function (str, opts) {
+  return JSON.stringify(toml.parse(str, opts), null, 2)
+}

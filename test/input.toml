@@ -1,0 +1,3 @@
+[toml]
+bar = "baz"
+qux = true
