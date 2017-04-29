@@ -1,5 +1,7 @@
 # jstransforer-toml
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-toml.svg)](https://greenkeeper.io/)
+
 [TOML](https://github.com/BinaryMuse/toml-node) support for JSTransformers.
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-toml/master.svg)](https://travis-ci.org/jstransformers/jstransformer-toml)
