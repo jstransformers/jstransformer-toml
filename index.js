@@ -1,6 +1,6 @@
 'use strict'
 
-var toml = require('toml')
+const toml = require('toml')
 
 exports.name = 'toml'
 exports.outputFormat = 'json'
