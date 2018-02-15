@@ -23,7 +23,6 @@ var result = toml.render('[toml]\nbar = "baz"\nqux = true', opts);
 console.log(JSON.parse(result).body)
 //=> '{"toml": {"bar": "baz", "qux": true}}'
 
-
 var promise = toml.renderFileAsync('./path/to/config.toml', opts);
 promise.then(function(data) {
   console.log(JSON.parse(result).body);
